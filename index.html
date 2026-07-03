@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RankUp Boost | Boosting Profesional de Valorant — Rank Up. We Do The Rest.</title>
+<meta name="description" content="Sube de rango en Valorant de forma rápida y segura con boosters Radiant. Pago 100% seguro con PayPal, entrega express, soporte 24/7 y garantía de satisfacción.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.rankupboost.example/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RankUp Boost">
+<meta property="og:title" content="RankUp Boost | Boosting Profesional de Valorant">
+<meta property="og:description" content="Rank Up. We Do The Rest. Boosters Radiant, pago seguro con PayPal, entrega express y soporte 24/7.">
+<meta property="og:url" content="https://www.rankupboost.example/">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RankUp Boost | Boosting Profesional de Valorant">
+<meta name="twitter:description" content="Rank Up. We Do The Rest. Boosters Radiant, pago seguro con PayPal, entrega express y soporte 24/7.">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Video game boosting service",
+  "provider": {
+    "@type": "Organization",
+    "name": "RankUp Boost",
+    "url": "https://www.rankupboost.example/",
+    "sameAs": []
+  },
+  "areaServed": "Worldwide",
+  "description": "Servicio profesional de boosting para Valorant: subida de rango, placements, win boost, duo queue, coaching y Premier Boost.",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "lowPrice": "10",
+    "highPrice": "500"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Google Identity Services: necesario para el botón "Continuar con Google" -->
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+<style>
+/* =========================================================
+   RANKUP BOOST — hoja de estilos
+   Todo el contenido editable vive en el CONFIG dentro del bloque de JavaScript.
+   Esta hoja solo define el aspecto visual (no la toques
+   salvo que quieras cambiar el diseño).
+   ========================================================= */
+
+:root{
+  --bg:#0b0b0b;
+  --bg-alt:#121212;
+  --bg-card:#161616;
+  --border:#262626;
+  --border-soft:#1e1e1e;
+  --red:#ff4655;
+  --red-dim:#c8323d;
+  --red-glow:rgba(255,70,85,.45);
+  --white:#f5f5f5;
+  --muted:#9a9a9a;
+  --muted-2:#6f6f6f;
+  --green:#2ecc71;
+  --font-display:'Bebas Neue', sans-serif;
+  --font-body:'Inter', sans-serif;
+  --radius:14px;
+  --radius-sm:8px;
+  --container:1180px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--white);
+  font-family:var(--font-body);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer}
+input,select{font-family:inherit}
+
+::selection{background:var(--red);color:#fff}
+
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+
+.container{max-width:var(--container);margin:0 auto;padding:0 24px}
+.section{padding:110px 0}
+@media (max-width:700px){.section{padding:70px 0}}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--red);font-weight:700;margin-bottom:14px;
+}
+.eyebrow::before{content:"";width:18px;height:1px;background:var(--red)}
+
+h1,h2,h3,.font-display{font-family:var(--font-display);letter-spacing:.01em;font-weight:400}
+
+.section-title{
+  font-size:clamp(32px,5vw,52px);
+  line-height:1.05;
+  margin-bottom:14px;
+}
+.section-sub{color:var(--muted);max-width:560px;font-size:16px}
+.section-head{margin-bottom:56px}
+.section-head.center{text-align:center;margin-left:auto;margin-right:auto}
+.section-head.center .section-sub{margin-left:auto;margin-right:auto}
+
+/* ---------- Botones ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:15px 28px;border-radius:10px;border:1px solid transparent;
+  font-weight:700;font-size:15px;cursor:pointer;transition:transform .15s ease, box-shadow .25s ease, background .2s ease, border-color .2s ease;
+  white-space:nowrap;
+}
+.btn:active{transform:scale(.97)}
+.btn-primary{
+  background:var(--red);color:#fff;
+  box-shadow:0 0 0 rgba(255,70,85,0);
+}
+.btn-primary:hover{box-shadow:0 0 28px var(--red-glow);background:#ff5865}
+.btn-secondary{
+  background:transparent;color:var(--white);border-color:var(--border);
+}
+.btn-secondary:hover{border-color:var(--red);color:var(--red)}
+.btn-block{width:100%}
+.btn-sm{padding:10px 16px;font-size:13px;border-radius:8px}
+.btn[disabled]{opacity:.5;cursor:not-allowed;box-shadow:none}
+
+/* ---------- Fondo con partículas ---------- */
+#particles{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.particle{
+  position:absolute;bottom:-10px;border-radius:50%;
+  background:var(--red);opacity:.35;filter:blur(1px);
+  animation:float linear infinite;
+}
+@keyframes float{
+  0%{transform:translateY(0) translateX(0);opacity:0}
+  10%{opacity:.5}
+  90%{opacity:.35}
+  100%{transform:translateY(-110vh) translateX(20px);opacity:0}
+}
+@media (prefers-reduced-motion:reduce){
+  .particle{animation:none;display:none}
+  *{animation-duration:.001ms !important;transition-duration:.001ms !important}
+}
+
+/* ---------- Nav ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  background:rgba(11,11,11,.75);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border-soft);
+}
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 24px;max-width:var(--container);margin:0 auto;
+}
+.logo{font-family:var(--font-display);font-size:26px;letter-spacing:.03em}
+.logo span{color:var(--red)}
+.nav-links{display:flex;gap:32px;font-size:14px;font-weight:500;color:var(--muted)}
+.nav-links a:hover{color:var(--white)}
+.nav-right{display:flex;align-items:center;gap:14px}
+
+/* ---------- Login (Discord / Google) ---------- */
+.auth-area{display:flex;align-items:center}
+.auth-buttons{display:flex;align-items:center;gap:8px}
+.discord-btn{
+  display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:8px;
+  background:var(--bg-card);border:1px solid var(--border);color:var(--white);
+  font-size:13px;font-weight:600;transition:border-color .2s;
+}
+.discord-btn:hover{border-color:#5865F2;color:#5865F2}
+#googleBtnWrap{line-height:0}
+.user-chip{
+  display:flex;align-items:center;gap:8px;background:var(--bg-card);border:1px solid var(--border);
+  border-radius:999px;padding:5px 6px 5px 5px;
+}
+.user-avatar{width:26px;height:26px;border-radius:50%;object-fit:cover;background:var(--red)}
+.user-name{font-size:12.5px;font-weight:600;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.logout-btn{background:none;border:none;color:var(--muted);font-size:16px;line-height:1;padding:0 4px}
+.logout-btn:hover{color:var(--red)}
+@media (max-width:860px){
+  .nav-right{flex-wrap:wrap;justify-content:flex-end;max-width:70%}
+  .auth-buttons{flex-wrap:wrap;justify-content:flex-end}
+  .user-name{max-width:80px}
+}
+.nav-toggle{display:none;background:none;border:none;color:var(--white);font-size:22px}
+@media (max-width:860px){
+  .nav-links{
+    position:absolute;top:100%;left:0;right:0;flex-direction:column;
+    background:var(--bg-alt);padding:20px 24px;gap:18px;border-bottom:1px solid var(--border);
+    display:none;
+  }
+  .nav-links.open{display:flex}
+  .nav-toggle{display:block}
+  .nav-right .btn{display:none}
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;z-index:1;
+  min-height:100vh;display:flex;align-items:center;
+  padding-top:120px;padding-bottom:60px;
+}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+@media (max-width:960px){.hero-grid{grid-template-columns:1fr;text-align:center}}
+
+.stars{color:var(--red);letter-spacing:2px;font-size:15px}
+.hero-badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+@media (max-width:960px){.hero-badges{justify-content:center}}
+.pill{
+  display:flex;align-items:center;gap:6px;
+  background:var(--bg-card);border:1px solid var(--border);
+  padding:8px 14px;border-radius:999px;font-size:13px;color:var(--muted);
+}
+
+.hero h1{font-size:clamp(44px,7vw,84px);line-height:.98;margin:18px 0 16px}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p.subtitle{font-family:var(--font-display);font-size:clamp(20px,2.6vw,28px);color:var(--white);letter-spacing:.02em;margin-bottom:22px}
+.hero p.desc{color:var(--muted);max-width:480px;margin-bottom:32px;font-size:16px}
+@media (max-width:960px){.hero p.desc{margin-left:auto;margin-right:auto}}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+@media (max-width:960px){.hero-ctas{justify-content:center}}
+
+/* Ilustración hero: gráfico abstracto CSS (crosshair + orbe de rango), sin assets externos */
+.hero-visual{position:relative;height:440px;display:flex;align-items:center;justify-content:center}
+.orb{
+  width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, rgba(255,70,85,.55), rgba(255,70,85,.08) 60%, transparent 70%);
+  filter:blur(2px);
+  animation:pulse 4s ease-in-out infinite;
+  position:absolute;
+}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.ring{
+  position:absolute;border:1px solid var(--border);border-radius:50%;
+}
+.ring-1{width:340px;height:340px;animation:spin 26s linear infinite}
+.ring-2{width:420px;height:420px;border-style:dashed;border-color:#2a2a2a;animation:spin 40s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ring-1::after, .ring-1::before{
+  content:"";position:absolute;width:8px;height:8px;background:var(--red);border-radius:50%;
+  box-shadow:0 0 12px var(--red-glow);
+}
+.ring-1::after{top:-4px;left:calc(50% - 4px)}
+.ring-1::before{bottom:-4px;left:calc(50% - 4px)}
+.crosshair{position:absolute;width:70px;height:70px}
+.crosshair::before,.crosshair::after{content:"";position:absolute;background:var(--red)}
+.crosshair::before{width:2px;height:100%;left:50%;transform:translateX(-50%)}
+.crosshair::after{height:2px;width:100%;top:50%;transform:translateY(-50%)}
+.rank-chip-float{
+  position:absolute;background:var(--bg-card);border:1px solid var(--border);
+  padding:10px 16px;border-radius:10px;font-family:var(--font-display);font-size:15px;
+  letter-spacing:.04em;box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+.rank-chip-float.top{top:6%;right:2%;color:var(--muted)}
+.rank-chip-float.bottom{bottom:8%;left:0;color:var(--red);border-color:var(--red-dim)}
+@media (max-width:960px){.hero-visual{height:320px;margin-top:20px}}
+
+/* ---------- Barra de confianza ---------- */
+.trustbar{
+  border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);
+  background:var(--bg-alt);position:relative;z-index:1;
+}
+.trustbar .container{
+  display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;
+  padding:26px 24px;
+}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted);white-space:nowrap}
+.trust-item .ico{color:var(--green)}
+
+/* ---------- Calculadora ---------- */
+.calc-wrap{position:relative;z-index:1}
+.game-tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.game-tab{
+  padding:10px 18px;border-radius:999px;border:1px solid var(--border);
+  background:var(--bg-card);font-size:13px;font-weight:600;color:var(--muted);
+  display:flex;align-items:center;gap:8px;
+}
+.game-tab.active{border-color:var(--red);color:var(--white);box-shadow:0 0 18px rgba(255,70,85,.25)}
+.game-tab.locked{opacity:.55;cursor:not-allowed}
+.game-tab .soon{font-size:10px;background:var(--border);padding:2px 6px;border-radius:6px;color:var(--muted-2)}
+
+.calc-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:start}
+@media (max-width:960px){.calc-grid{grid-template-columns:1fr}}
+
+.glass-card{
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  backdrop-filter:blur(10px);
+  padding:32px;
+}
+
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:22px}
+@media (max-width:560px){.field-row{grid-template-columns:1fr}}
+.field label{
+  display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--muted);margin-bottom:8px;font-weight:600;
+}
+.select-wrap{position:relative;display:flex;align-items:center;gap:10px}
+.rank-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;box-shadow:0 0 10px currentColor}
+select{
+  width:100%;background:var(--bg);border:1px solid var(--border);color:var(--white);
+  padding:13px 14px;border-radius:10px;font-size:15px;appearance:none;
+  background-image:linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position:calc(100% - 20px) center, calc(100% - 15px) center;
+  background-size:5px 5px, 5px 5px;background-repeat:no-repeat;
+  transition:border-color .2s;
+}
+select:focus{border-color:var(--red)}
+
+.rank-ladder{display:flex;align-items:center;gap:6px;margin:22px 0 30px;overflow-x:auto;padding-bottom:4px}
+.rank-node{
+  flex-shrink:0;font-size:11px;padding:6px 10px;border-radius:999px;
+  border:1px solid var(--border);color:var(--muted-2);white-space:nowrap;transition:all .25s;
+}
+.rank-node.in-range{border-color:var(--red);color:var(--white);background:rgba(255,70,85,.12)}
+.rank-node.endpoint{background:var(--red);color:#fff;border-color:var(--red)}
+.rank-chevron{color:var(--border);font-size:11px}
+.rank-chevron.active{color:var(--red)}
+
+.extras-title{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;margin:26px 0 14px}
+.extra-item{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:14px 16px;border:1px solid var(--border);border-radius:10px;margin-bottom:10px;
+  background:var(--bg);transition:border-color .2s;
+}
+.extra-item:has(input:checked){border-color:var(--red)}
+.extra-left{display:flex;align-items:center;gap:12px}
+.extra-name{font-size:14px;font-weight:600}
+.extra-desc{font-size:12px;color:var(--muted-2)}
+.extra-price{font-size:13px;color:var(--red);font-weight:700;white-space:nowrap}
+.switch{position:relative;width:42px;height:24px;flex-shrink:0}
+.switch input{position:absolute;opacity:0;width:100%;height:100%;cursor:pointer;margin:0}
+.slider-track{
+  position:absolute;inset:0;background:var(--border);border-radius:999px;transition:.2s;
+}
+.slider-track::before{
+  content:"";position:absolute;width:18px;height:18px;left:3px;top:3px;background:#fff;border-radius:50%;transition:.2s;
+}
+.switch input:checked + .slider-track{background:var(--red)}
+.switch input:checked + .slider-track::before{transform:translateX(18px)}
+.hours-input{
+  width:56px;background:var(--bg-card);border:1px solid var(--border);color:var(--white);
+  border-radius:6px;padding:4px 6px;font-size:13px;text-align:center;margin-left:8px;
+}
+
+/* Resumen del pedido (sticky en desktop dentro de la calculadora) */
+.summary-card{position:sticky;top:100px}
+.summary-title{font-family:var(--font-display);font-size:22px;letter-spacing:.02em;margin-bottom:20px}
+.summary-line{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);padding:9px 0;border-bottom:1px dashed var(--border-soft)}
+.summary-line span:last-child{color:var(--white);font-weight:600;text-align:right}
+.summary-total{display:flex;justify-content:space-between;align-items:baseline;margin:22px 0}
+.summary-total .label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.summary-total .amount{font-family:var(--font-display);font-size:38px;color:var(--red)}
+.summary-note{font-size:12px;color:var(--muted-2);margin-top:10px;line-height:1.5}
+
+/* Barra fija inferior (siempre visible) */
+.stickybar{
+  position:fixed;bottom:0;left:0;right:0;z-index:60;
+  background:rgba(11,11,11,.92);backdrop-filter:blur(14px);
+  border-top:1px solid var(--border);
+  padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  transform:translateY(0);transition:transform .3s;
+}
+.stickybar .info{display:flex;flex-direction:column;gap:2px}
+.stickybar .info .r{font-size:12px;color:var(--muted)}
+.stickybar .info .p{font-family:var(--font-display);font-size:24px;color:var(--red)}
+body{padding-bottom:82px}
+
+/* ---------- Cómo funciona ---------- */
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media (max-width:860px){.steps-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps-grid{grid-template-columns:1fr}}
+.step{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:28px 24px;position:relative}
+.step-num{font-family:var(--font-display);font-size:42px;color:var(--red);opacity:.5;line-height:1}
+.step h3{font-family:var(--font-body);font-size:17px;font-weight:700;margin:14px 0 8px}
+.step p{font-size:13.5px;color:var(--muted)}
+
+/* ---------- Servicios ---------- */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media (max-width:900px){.services-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.services-grid{grid-template-columns:1fr}}
+.service-card{
+  background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:26px;display:flex;flex-direction:column;gap:12px;transition:transform .2s, border-color .2s, box-shadow .2s;
+}
+.service-card:hover{transform:translateY(-4px);border-color:var(--red-dim);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.service-ico{width:46px;height:46px;border-radius:12px;background:rgba(255,70,85,.12);display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--red);border:1px solid var(--red-dim)}
+.service-card h3{font-family:var(--font-body);font-size:17px;font-weight:700}
+.service-card p{font-size:13.5px;color:var(--muted);flex:1}
+.service-price{font-size:13px;color:var(--muted-2)}
+.service-price strong{color:var(--white);font-size:16px}
+
+/* ---------- Por qué elegirnos ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:860px){.why-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.why-grid{grid-template-columns:1fr}}
+.why-item{display:flex;align-items:center;gap:12px;padding:16px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:10px;font-size:14px;font-weight:600}
+.why-item .ico{color:var(--green);font-size:16px}
+
+/* ---------- Stats ---------- */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+@media (max-width:700px){.stats-grid{grid-template-columns:1fr 1fr}}
+.stat-num{font-family:var(--font-display);font-size:clamp(38px,5vw,58px);color:var(--red)}
+.stat-label{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin-top:6px}
+
+/* ---------- Testimonios ---------- */
+.testi-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:none}
+.testi-track::-webkit-scrollbar{display:none}
+.testi-card{
+  scroll-snap-align:start;flex:0 0 340px;background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:26px;
+}
+.testi-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--red),#7a1c25);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+.testi-name{font-size:14px;font-weight:700}
+.testi-rank{font-size:12px;color:var(--red)}
+.testi-stars{color:var(--red);font-size:13px;margin-bottom:10px}
+.testi-text{font-size:13.5px;color:var(--muted);line-height:1.6}
+.testi-controls{display:flex;gap:10px;margin-top:20px}
+.testi-controls button{
+  width:38px;height:38px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);color:var(--white);
+}
+.testi-controls button:hover{border-color:var(--red);color:var(--red)}
+
+/* ---------- FAQ ---------- */
+.faq-list{max-width:760px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border-soft);padding:20px 0}
+.faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:600;font-size:15.5px}
+.faq-q .plus{color:var(--red);font-size:20px;transition:transform .2s;flex-shrink:0;margin-left:14px}
+.faq-item.open .plus{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;font-size:14px;color:var(--muted);line-height:1.6}
+.faq-item.open .faq-a{max-height:200px;padding-top:12px}
+
+/* ---------- Footer ---------- */
+footer{background:var(--bg-alt);border-top:1px solid var(--border-soft);padding:70px 0 30px;position:relative;z-index:1}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:50px}
+@media (max-width:800px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.footer-grid{grid-template-columns:1fr}}
+.footer-grid h4{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:16px}
+.footer-grid a{display:block;font-size:14px;color:var(--muted-2);margin-bottom:10px}
+.footer-grid a:hover{color:var(--red)}
+.footer-desc{color:var(--muted-2);font-size:13.5px;margin-top:14px;max-width:320px;line-height:1.6}
+.footer-social{display:flex;gap:12px;margin-top:16px}
+.footer-social a{width:36px;height:36px;border-radius:8px;background:var(--bg-card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0}
+.footer-bottom{border-top:1px solid var(--border-soft);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:var(--muted-2)}
+
+/* ---------- Modal de datos de cuenta ---------- */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(4px);
+  display:none;align-items:center;justify-content:center;z-index:100;padding:20px;
+}
+.modal-overlay.open{display:flex}
+.modal{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;max-width:460px;width:100%;max-height:90vh;overflow-y:auto}
+.modal h3{font-family:var(--font-display);font-size:26px;margin-bottom:8px}
+.modal p{color:var(--muted);font-size:14px;margin-bottom:22px}
+.modal label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px;margin-top:14px;font-weight:600}
+.modal input,.modal textarea{
+  width:100%;background:var(--bg);border:1px solid var(--border);color:var(--white);
+  padding:12px;border-radius:8px;font-size:14px;
+}
+.modal textarea{resize:vertical;min-height:70px}
+.modal-security{background:rgba(46,204,113,.08);border:1px solid rgba(46,204,113,.3);border-radius:8px;padding:12px 14px;font-size:12.5px;color:var(--green);margin-top:16px;line-height:1.5}
+.modal-close{position:absolute;top:20px;right:20px;background:none;border:none;color:var(--muted);font-size:22px}
+.modal{position:relative}
+.modal-actions{display:flex;gap:10px;margin-top:22px}
+
+.toast{
+  position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(20px);
+  background:var(--bg-card);border:1px solid var(--red-dim);color:var(--white);
+  padding:12px 20px;border-radius:10px;font-size:13.5px;z-index:90;
+  opacity:0;pointer-events:none;transition:.25s;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<div id="particles"></div>
+
+<!-- ============ NAV ============ -->
+<header>
+  <nav>
+    <a href="#top" class="logo">RANK<span>UP</span> BOOST</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#calculadora">Calculadora</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#por-que">Por qué nosotros</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="auth-area" id="authArea">
+        <!-- Estado sin sesión -->
+        <div class="auth-buttons" id="authLoggedOut">
+          <div id="googleBtnWrap"></div>
+          <button class="discord-btn" id="discordLoginBtn" type="button">💬 Discord</button>
+        </div>
+        <!-- Estado con sesión (oculto hasta hacer login) -->
+        <div class="user-chip" id="authLoggedIn" style="display:none">
+          <img class="user-avatar" id="userAvatar" alt="">
+          <span class="user-name" id="userName"></span>
+          <button class="logout-btn" id="logoutBtn" type="button" aria-label="Cerrar sesión">×</button>
+        </div>
+      </div>
+      <a href="#calculadora" class="btn btn-primary btn-sm">Comprar ahora</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Boosting profesional de Valorant</span>
+      <h1>Professional<br><em>Valorant</em> Boosting</h1>
+      <p class="subtitle">Rank Up. We Do The Rest.</p>
+      <p class="desc">Boosters Radiant verificados, entregas rápidas y pago 100% seguro. Sube de rango sin arriesgar tu cuenta ni tu tiempo.</p>
+      <div class="hero-ctas">
+        <a href="#calculadora" class="btn btn-primary">Comprar ahora</a>
+        <a href="#servicios" class="btn btn-secondary">Ver precios</a>
+      </div>
+      <div class="hero-badges">
+        <span class="pill"><span class="stars">★★★★★</span></span>
+        <span class="pill">👥 5000+ clientes</span>
+        <span class="pill">🎧 24/7 Support</span>
+        <span class="pill">🛡️ 100% Safe</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="ring ring-2"></div>
+      <div class="ring ring-1"></div>
+      <div class="orb"></div>
+      <div class="crosshair"></div>
+      <div class="rank-chip-float top">GOLD 2</div>
+      <div class="rank-chip-float bottom">RADIANT</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trustbar">
+  <div class="container">
+    <div class="trust-item"><span class="ico">✔</span> Pago seguro mediante PayPal</div>
+    <div class="trust-item"><span class="ico">✔</span> Sin riesgo de baneo</div>
+    <div class="trust-item"><span class="ico">✔</span> Boosters Radiant</div>
+    <div class="trust-item"><span class="ico">✔</span> Soporte 24/7</div>
+    <div class="trust-item"><span class="ico">✔</span> Garantía de satisfacción</div>
+  </div>
+</section>
+
+<!-- ============ CALCULADORA ============ -->
+<section class="section calc-wrap" id="calculadora">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Calculadora de boost</span>
+      <h2 class="section-title">Configura tu servicio</h2>
+      <p class="section-sub">Elige tu rango actual y tu objetivo. El precio se actualiza al instante.</p>
+    </div>
+
+    <div class="game-tabs" id="gameTabs"></div>
+
+    <div class="calc-grid">
+      <!-- Formulario -->
+      <div class="glass-card">
+        <div class="field-row">
+          <div class="field">
+            <label for="fromRank">Rango actual</label>
+            <div class="select-wrap">
+              <span class="rank-dot" id="fromDot"></span>
+              <select id="fromRank"></select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="toRank">Rango deseado</label>
+            <div class="select-wrap">
+              <span class="rank-dot" id="toDot"></span>
+              <select id="toRank"></select>
+            </div>
+          </div>
+        </div>
+
+        <div class="rank-ladder" id="rankLadder"></div>
+
+        <div class="extras-title">Extras</div>
+        <div id="extrasList"></div>
+      </div>
+
+      <!-- Resumen -->
+      <div class="glass-card summary-card">
+        <div class="summary-title">Resumen del pedido</div>
+        <div class="summary-line"><span>Servicio</span><span id="sumService">Rank Boost — Valorant</span></div>
+        <div class="summary-line"><span>Rango</span><span id="sumRank">—</span></div>
+        <div class="summary-line"><span>Extras</span><span id="sumExtras">Ninguno</span></div>
+        <div class="summary-line"><span>Tiempo estimado</span><span id="sumTime">—</span></div>
+        <div class="summary-total">
+          <span class="label">Total</span>
+          <span class="amount" id="sumTotal">0€</span>
+        </div>
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-block" id="payBtnMain">Pagar con PayPal</a>
+        <p class="summary-note" id="sumNote">Tras el pago te pediremos los datos de tu cuenta (Riot ID) para empezar. Nunca solicitamos tu contraseña por este formulario.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CÓMO FUNCIONA ============ -->
+<section class="section" style="background:var(--bg-alt)">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Proceso</span>
+      <h2 class="section-title">Cómo funciona</h2>
+      <p class="section-sub">De la compra al rank up en cuatro pasos, sin complicaciones.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step"><div class="step-num">1</div><h3>Comprar</h3><p>Configura tu servicio en la calculadora y confirma el pedido.</p></div>
+      <div class="step"><div class="step-num">2</div><h3>Pagar</h3><p>Paga de forma segura con PayPal, sin datos de tarjeta expuestos.</p></div>
+      <div class="step"><div class="step-num">3</div><h3>Enviar datos</h3><p>Nos indicas tu Riot ID y preferencias de horario de juego.</p></div>
+      <div class="step"><div class="step-num">4</div><h3>Empezar boost</h3><p>Un booster Radiant se pone en marcha y sigues el progreso en tiempo real.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section class="section" id="servicios">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Catálogo</span>
+      <h2 class="section-title">Servicios adicionales</h2>
+      <p class="section-sub">Más allá del rank boost: cubrimos cualquier objetivo competitivo.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- ============ POR QUÉ ELEGIRNOS ============ -->
+<section class="section" style="background:var(--bg-alt)" id="por-que">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Confianza</span>
+      <h2 class="section-title">Por qué elegirnos</h2>
+    </div>
+    <div class="why-grid" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- ============ ESTADÍSTICAS ============ -->
+<section class="section" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div><div class="stat-num" data-target="10000" data-suffix="+">0</div><div class="stat-label">Pedidos completados</div></div>
+      <div><div class="stat-num" data-target="98" data-suffix="%">0</div><div class="stat-label">Clientes satisfechos</div></div>
+      <div><div class="stat-num" data-static="15 min">0</div><div class="stat-label">Tiempo medio de respuesta</div></div>
+      <div><div class="stat-num" data-static="24/7">0</div><div class="stat-label">Soporte</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPINIONES ============ -->
+<section class="section" style="background:var(--bg-alt)" id="opiniones">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Testimonios</span>
+      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      <p class="section-sub" style="font-size:12px">Reseñas de ejemplo — sustitúyelas por opiniones reales de tus clientes.</p>
+    </div>
+    <div class="testi-track" id="testiTrack"></div>
+    <div class="testi-controls">
+      <button id="testiPrev" aria-label="Anterior">‹</button>
+      <button id="testiNext" aria-label="Siguiente">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Dudas frecuentes</span>
+      <h2 class="section-title">Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="logo">RANK<span>UP</span> BOOST</a>
+        <p class="footer-desc">Servicio profesional de boosting para juegos competitivos. Boosters verificados, pago seguro y soporte real 24/7.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Discord">💬</a>
+          <a href="#" aria-label="Telegram">✈️</a>
+          <a href="mailto:contacto@rankupboost.example" aria-label="Email">✉️</a>
+        </div>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <a href="#servicios">Rank Boost</a>
+        <a href="#servicios">Duo Queue</a>
+        <a href="#servicios">Coaching</a>
+        <a href="#servicios">Premier Boost</a>
+      </div>
+      <div>
+        <h4>Compañía</h4>
+        <a href="#por-que">Por qué nosotros</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#faq">FAQ</a>
+        <a href="#calculadora">Comprar</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Términos de servicio</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Política de reembolsos</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> RankUp Boost. Todos los derechos reservados.</span>
+      <span>RankUp Boost no está afiliado a Riot Games. VALORANT es una marca registrada de Riot Games, Inc.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BARRA FIJA DE PAGO ============ -->
+<div class="stickybar">
+  <div class="info">
+    <span class="r" id="stickyRank">Selecciona tu rango</span>
+    <span class="p" id="stickyTotal">0€</span>
+  </div>
+  <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="payBtnSticky">Pagar con PayPal</a>
+</div>
+
+<!-- ============ MODAL DATOS DE CUENTA ============ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+    <h3>¡Gracias por tu compra!</h3>
+    <p>Se ha abierto PayPal en una pestaña nueva. Mientras completas el pago, déjanos los datos para empezar tu boost cuanto antes.</p>
+    <p class="modal-security" id="modalUserNote" style="display:none"></p>
+    <form id="accountForm">
+      <label for="riotId">Riot ID (usuario#tag)</label>
+      <input type="text" id="riotId" placeholder="Jugador#1234" required>
+      <label for="contactEmail">Email de contacto</label>
+      <input type="email" id="contactEmail" placeholder="tucorreo@ejemplo.com" required>
+      <label for="notes">Notas adicionales</label>
+      <textarea id="notes" placeholder="Horario preferido, agentes favoritos, etc."></textarea>
+      <div class="modal-security">🔒 Nunca te pediremos tu contraseña por este formulario. Las credenciales, si son necesarias, se gestionan por un canal privado y cifrado.</div>
+      <div class="modal-actions">
+        <button type="submit" class="btn btn-primary btn-block">Enviar datos</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* =========================================================================
+   RANKUP BOOST — CONFIG
+   -------------------------------------------------------------------------
+   Todo lo editable vive aquí. No hace falta tocar el resto del código para:
+   - Cambiar precios: edita "stepCosts" (coste de subir un sub-rango).
+     Pon "null" en un tramo para que muestre "Consultar" (p.ej. Immortal→Radiant).
+   - Cambiar extras, sus precios o su tipo (percent / flat / hourly).
+   - Añadir un nuevo juego: agrega un objeto en "games" con active:true
+     y su propia lista de "ranks" y "stepCosts".
+   - Cambiar tu usuario de PayPal.me, Discord, Telegram o email.
+   - Añadir/editar servicios, testimonios y preguntas frecuentes.
+   ========================================================================= */
+const CONFIG = {
+  brand: {
+    paypalUsername: "TUUSUARIO",     // cámbialo por tu usuario real de paypal.me
+    discord: "#",
+    telegram: "#",
+    email: "contacto@rankupboost.example"
+  },
+  // Login con Discord y Google. Necesitas crear tus propias apps (ver README).
+  auth: {
+    googleClientId: "TU_GOOGLE_CLIENT_ID.apps.googleusercontent.com",
+    discordClientId: "TU_DISCORD_CLIENT_ID",
+    // Debe coincidir EXACTAMENTE (incluida la barra final) con la URL donde publiques la web
+    // y con la "Redirect URI" configurada en el Discord Developer Portal.
+    discordRedirectUri: "https://TU-USUARIO.github.io/TU-REPO/"
+  },
+  games: [
+    {
+      id: "valorant",
+      name: "Valorant",
+      active: true,
+      ranks: ["Iron","Bronze","Silver","Gold","Platinum","Diamond","Ascendant","Immortal","Radiant"],
+      rankColors: ["#8a8a8a","#c97a4a","#c0c7cc","#e8c34a","#3fbfa6","#5aa0e8","#3fd17a","#e84a8a","#ffe9a8"],
+      // coste de pasar del rango i al rango i+1. null = "Consultar" (presupuesto personalizado)
+      stepCosts: [10, 12, 18, 28, 40, 60, null, null],
+      extras: {
+        duo:      { label: "Duo Queue",          desc: "Jugamos contigo, no en tu cuenta", type: "percent", value: 0.30 },
+        express:  { label: "Express 24 horas",   desc: "Entrega prioritaria",               type: "percent", value: 0.50 },
+        stream:   { label: "Stream del proceso", desc: "Ves el boost en directo",           type: "flat",    value: 10 },
+        coaching: { label: "Coaching",           desc: "Sesión personalizada por hora",     type: "hourly",  value: 15 }
+      }
+    },
+    { id: "lol",    name: "League of Legends", active: false },
+    { id: "cs2",    name: "CS2",               active: false },
+    { id: "marvel", name: "Marvel Rivals",     active: false }
+  ],
+  services: [
+    { icon:"🏆", title:"Rank Boost",         desc:"Subimos tu cuenta hasta el rango que necesitas, con boosters Radiant verificados.", from:10 },
+    { icon:"🎯", title:"Placement Matches",  desc:"Partidas de colocación jugadas al máximo nivel para arrancar en el rango más alto posible.", from:25 },
+    { icon:"⚡", title:"Win Boost",          desc:"Compra victorias sueltas para acelerar tu progreso sin comprometer todo tu tiempo.", from:8 },
+    { icon:"🤝", title:"Duo Queue",          desc:"Un booster Radiant juega contigo, en tu propia partida, en todo momento.", from:15 },
+    { icon:"🎓", title:"Coaching",           desc:"Sesiones 1 a 1 con un jugador Radiant para mejorar tu mecánica y game sense.", from:15 },
+    { icon:"🔥", title:"Premier Boost",      desc:"Boosting para el modo Premier de Valorant, ideal para equipos y torneos.", from:40 }
+  ],
+  why: [
+    "Boosters Radiant","Más de 10.000 pedidos","Pago seguro","Garantía de satisfacción",
+    "100% confidencial","Sin uso de VPN","Sin bots ni scripts","Soporte 24/7","Entrega rápida"
+  ],
+  // Testimonios de EJEMPLO — sustitúyelos por reseñas reales de tus clientes antes de publicar
+  testimonials: [
+    { name:"Cliente A.", rank:"Diamond 3 alcanzado", text:"Pedido rápido y sin sorpresas. El proceso se explicó paso a paso y todo fue muy transparente." },
+    { name:"Cliente M.", rank:"Immortal alcanzado", text:"La opción de duo queue me ayudó a mejorar mientras subía de rango. Repetiré seguro." },
+    { name:"Cliente L.", rank:"Ascendant 1 alcanzado", text:"Soporte disponible en todo momento para resolver dudas antes y durante el servicio." },
+    { name:"Cliente R.", rank:"Platinum 2 alcanzado", text:"El seguimiento del pedido fue claro y el tiempo estimado se cumplió sin retrasos." },
+    { name:"Cliente S.", rank:"Gold 4 alcanzado", text:"Primera vez usando un servicio así y la experiencia fue mejor de lo esperado." }
+  ],
+  faq: [
+    { q:"¿Es seguro?", a:"Trabajamos sin VPN ni bots, con boosters humanos y prácticas orientadas a minimizar riesgos sobre tu cuenta." },
+    { q:"¿Puedo jugar durante el boost?", a:"Depende del servicio: en Duo Queue juegas tú en todo momento; en Rank Boost estándar el booster juega mientras dura el servicio contratado." },
+    { q:"¿Cómo funciona el pago con PayPal?", a:"Seleccionas tu servicio, revisas el resumen del pedido y pagas de forma segura a través de PayPal, sin compartir datos de tarjeta con nosotros." },
+    { q:"¿Hay reembolso?", a:"Sí, consulta nuestra política de reembolsos en el footer para conocer los plazos y condiciones exactas." },
+    { q:"¿Cuánto tarda el servicio?", a:"El tiempo estimado aparece en el resumen del pedido según el rango de origen, destino y extras seleccionados." }
+  ]
+};
+
+/* =========================================================================
+   Utilidades
+   ========================================================================= */
+const $  = (sel, ctx=document) => ctx.querySelector(sel);
+const $$ = (sel, ctx=document) => [...ctx.querySelectorAll(sel)];
+const fmtEUR = (n) => `${Math.round(n)}€`;
+
+const activeGame = CONFIG.games.find(g => g.active);
+let extraState = { duo:false, express:false, stream:false, coaching:false, coachingHours:1 };
+
+// Sesión del usuario logueado (Discord o Google). Se guarda solo en memoria:
+// al recargar la página se pierde. Si publicas la web de verdad y quieres que
+// la sesión persista entre visitas, guarda/lee este objeto con
+// localStorage.setItem('rub_user', JSON.stringify(user)) /
+// JSON.parse(localStorage.getItem('rub_user')).
+let currentUser = null;
+
+/* ---------- Tabs de juego ---------- */
+function renderGameTabs(){
+  const el = $("#gameTabs");
+  el.innerHTML = CONFIG.games.map(g => `
+    <button class="game-tab ${g.active ? "active":"locked"}" data-id="${g.id}">
+      ${g.name} ${!g.active ? '<span class="soon">Próximamente</span>' : ""}
+    </button>
+  `).join("");
+  $$(".game-tab", el).forEach(btn => btn.addEventListener("click", () => {
+    if(btn.dataset.id !== activeGame.id) showToast("🔒 Este juego estará disponible próximamente");
+  }));
+}
+
+/* ---------- Selects de rango ---------- */
+function renderRankSelects(){
+  const fromSel = $("#fromRank"), toSel = $("#toRank");
+  const opts = activeGame.ranks.map((r,i) => `<option value="${i}">${r}</option>`).join("");
+  fromSel.innerHTML = opts;
+  toSel.innerHTML = opts;
+  fromSel.value = 1; // Bronze
+  toSel.value = 3;   // Gold
+  updateDot("fromDot", fromSel.value);
+  updateDot("toDot", toSel.value);
+  fromSel.addEventListener("change", () => { updateDot("fromDot", fromSel.value); syncRanks(); });
+  toSel.addEventListener("change", () => { updateDot("toDot", toSel.value); syncRanks(); });
+}
+function updateDot(id, idx){
+  $("#"+id).style.color = activeGame.rankColors[idx];
+  $("#"+id).style.background = activeGame.rankColors[idx];
+}
+function syncRanks(){
+  const from = parseInt($("#fromRank").value), to = parseInt($("#toRank").value);
+  if(to <= from){
+    $("#toRank").value = Math.min(from+1, activeGame.ranks.length-1);
+    updateDot("toDot", $("#toRank").value);
+  }
+  renderLadder();
+  updateSummary();
+}
+
+/* ---------- Escalera visual de rangos ---------- */
+function renderLadder(){
+  const from = parseInt($("#fromRank").value), to = parseInt($("#toRank").value);
+  const el = $("#rankLadder");
+  el.innerHTML = activeGame.ranks.map((r,i) => {
+    const inRange = i >= from && i <= to;
+    const isEndpoint = i === from || i === to;
+    const node = `<span class="rank-node ${inRange?"in-range":""} ${isEndpoint?"endpoint":""}">${r}</span>`;
+    const chevron = i < activeGame.ranks.length-1 ? `<span class="rank-chevron ${i>=from && i<to ? "active":""}">›</span>` : "";
+    return node + chevron;
+  }).join("");
+}
+
+/* ---------- Extras ---------- */
+function renderExtras(){
+  const el = $("#extrasList");
+  const ex = activeGame.extras;
+  el.innerHTML = `
+    ${extraRow("duo", ex.duo)}
+    ${extraRow("express", ex.express)}
+    ${extraRow("stream", ex.stream)}
+    ${extraRow("coaching", ex.coaching, true)}
+  `;
+  Object.keys(ex).forEach(key => {
+    $(`#extra-${key}`).addEventListener("change", (e) => {
+      extraState[key] = e.target.checked;
+      updateSummary();
+    });
+  });
+  const hoursInput = $("#coachingHours");
+  if(hoursInput){
+    hoursInput.addEventListener("input", () => {
+      extraState.coachingHours = Math.max(1, parseInt(hoursInput.value) || 1);
+      updateSummary();
+    });
+  }
+}
+function extraRow(key, extra, hourly=false){
+  const priceLabel = extra.type === "percent" ? `+${Math.round(extra.value*100)}%`
+                    : extra.type === "hourly" ? `+${extra.value}€/h`
+                    : `+${extra.value}€`;
+  return `
+    <div class="extra-item">
+      <div class="extra-left">
+        <label class="switch">
+          <input type="checkbox" id="extra-${key}">
+          <span class="slider-track"></span>
+        </label>
+        <div>
+          <div class="extra-name">${extra.label} ${hourly ? '<input type="number" min="1" value="1" class="hours-input" id="coachingHours">' : ""}</div>
+          <div class="extra-desc">${extra.desc}</div>
+        </div>
+      </div>
+      <div class="extra-price">${priceLabel}</div>
+    </div>
+  `;
+}
+
+/* ---------- Cálculo de precio ---------- */
+function calcPrice(){
+  const from = parseInt($("#fromRank").value), to = parseInt($("#toRank").value);
+  let base = 0, consult = false;
+  for(let i = from; i < to; i++){
+    const cost = activeGame.stepCosts[i];
+    if(cost === null || cost === undefined){ consult = true; break; }
+    base += cost;
+  }
+  if(consult) return { consult:true };
+
+  let total = base;
+  const extraLabels = [];
+  const ex = activeGame.extras;
+  if(extraState.duo){ total += base * ex.duo.value; extraLabels.push(ex.duo.label); }
+  if(extraState.express){ total += base * ex.express.value; extraLabels.push(ex.express.label); }
+  if(extraState.stream){ total += ex.stream.value; extraLabels.push(ex.stream.label); }
+  if(extraState.coaching){ total += ex.coaching.value * extraState.coachingHours; extraLabels.push(`${ex.coaching.label} (${extraState.coachingHours}h)`); }
+
+  const tierDiff = to - from;
+  let days = Math.max(1, Math.ceil(tierDiff * 1.4));
+  if(extraState.express) days = Math.max(1, Math.ceil(days/2));
+
+  return { consult:false, base, total, extraLabels, days };
+}
+
+/* ---------- Actualizar resumen + barra fija ---------- */
+function updateSummary(){
+  const from = parseInt($("#fromRank").value), to = parseInt($("#toRank").value);
+  const rankLabel = `${activeGame.ranks[from]} → ${activeGame.ranks[to]}`;
+  const result = calcPrice();
+
+  $("#sumRank").textContent = rankLabel;
+  $("#stickyRank").textContent = `${activeGame.name}: ${rankLabel}`;
+
+  const payMain = $("#payBtnMain"), paySticky = $("#payBtnSticky");
+
+  if(result.consult){
+    $("#sumExtras").textContent = "—";
+    $("#sumTime").textContent = "A consultar";
+    $("#sumTotal").textContent = "Consultar";
+    $("#stickyTotal").textContent = "Consultar";
+    $("#sumNote").textContent = "Este salto de rango requiere presupuesto personalizado. Contáctanos por Discord, Telegram o email.";
+    [payMain, paySticky].forEach(btn => {
+      btn.textContent = "Solicitar presupuesto";
+      btn.href = `mailto:${CONFIG.brand.email}?subject=Presupuesto ${rankLabel}`;
+      btn.target = "_self";
+    });
+  } else {
+    $("#sumExtras").textContent = result.extraLabels.length ? result.extraLabels.join(", ") : "Ninguno";
+    $("#sumTime").textContent = `${result.days}-${result.days+2} días`;
+    $("#sumTotal").textContent = fmtEUR(result.total);
+    $("#stickyTotal").textContent = fmtEUR(result.total);
+    $("#sumNote").textContent = "Tras el pago te pediremos los datos de tu cuenta (Riot ID) para empezar. Nunca solicitamos tu contraseña por este formulario.";
+    const link = `https://www.paypal.com/paypalme/${CONFIG.brand.paypalUsername}/${Math.round(result.total)}EUR`;
+    [payMain, paySticky].forEach(btn => {
+      btn.textContent = "Pagar con PayPal";
+      btn.href = link;
+      btn.target = "_blank";
+    });
+  }
+}
+
+/* ---------- Servicios ---------- */
+function renderServices(){
+  $("#servicesGrid").innerHTML = CONFIG.services.map(s => `
+    <div class="service-card">
+      <div class="service-ico">${s.icon}</div>
+      <h3>${s.title}</h3>
+      <p>${s.desc}</p>
+      <div class="service-price">Desde <strong>${s.from}€</strong></div>
+      <a href="#calculadora" class="btn btn-secondary btn-sm">Comprar</a>
+    </div>
+  `).join("");
+}
+
+/* ---------- Por qué elegirnos ---------- */
+function renderWhy(){
+  $("#whyGrid").innerHTML = CONFIG.why.map(w => `<div class="why-item"><span class="ico">✓</span>${w}</div>`).join("");
+}
+
+/* ---------- Testimonios ---------- */
+function renderTestimonials(){
+  $("#testiTrack").innerHTML = CONFIG.testimonials.map(t => `
+    <div class="testi-card">
+      <div class="testi-head">
+        <div class="avatar">${t.name.charAt(0)}</div>
+        <div>
+          <div class="testi-name">${t.name}</div>
+          <div class="testi-rank">${t.rank}</div>
+        </div>
+      </div>
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">${t.text}</p>
+    </div>
+  `).join("");
+  const track = $("#testiTrack");
+  $("#testiPrev").addEventListener("click", () => track.scrollBy({left:-360, behavior:"smooth"}));
+  $("#testiNext").addEventListener("click", () => track.scrollBy({left:360, behavior:"smooth"}));
+}
+
+/* ---------- FAQ ---------- */
+function renderFAQ(){
+  $("#faqList").innerHTML = CONFIG.faq.map((f,i) => `
+    <div class="faq-item" data-i="${i}">
+      <div class="faq-q">${f.q}<span class="plus">+</span></div>
+      <div class="faq-a">${f.a}</div>
+    </div>
+  `).join("");
+  $$(".faq-item").forEach(item => {
+    $(".faq-q", item).addEventListener("click", () => item.classList.toggle("open"));
+  });
+}
+
+/* ---------- Contadores animados ---------- */
+function initStats(){
+  const nums = $$(".stat-num");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const el = entry.target;
+        if(el.dataset.static){ el.textContent = el.dataset.static; observer.unobserve(el); return; }
+        const target = parseInt(el.dataset.target);
+        const suffix = el.dataset.suffix || "";
+        let cur = 0;
+        const step = Math.max(1, Math.ceil(target/60));
+        const tick = () => {
+          cur = Math.min(target, cur+step);
+          el.textContent = cur.toLocaleString("es-ES") + suffix;
+          if(cur < target) requestAnimationFrame(tick);
+        };
+        tick();
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold:0.4 });
+  nums.forEach(n => observer.observe(n));
+}
+
+/* ---------- Nav móvil ---------- */
+function initNav(){
+  $("#navToggle").addEventListener("click", () => $("#navLinks").classList.toggle("open"));
+  $$("#navLinks a").forEach(a => a.addEventListener("click", () => $("#navLinks").classList.remove("open")));
+}
+
+/* =========================================================================
+   LOGIN — Discord y Google
+   -------------------------------------------------------------------------
+   Google: usa Google Identity Services (100% en el navegador, sin backend).
+   Discord: usa el flujo OAuth2 "implicit grant" (también sin backend): se
+   redirige a Discord, el usuario autoriza, y Discord te devuelve a tu propia
+   web con un token en la URL, que usamos para pedir sus datos.
+
+   Para que funcione de verdad necesitas crear tus propias apps:
+
+   GOOGLE
+   1. https://console.cloud.google.com/ → crea un proyecto.
+   2. "APIs y servicios" → "Credenciales" → "Crear credenciales" → "ID de cliente de OAuth".
+   3. Tipo de aplicación: "Aplicación web".
+   4. En "Orígenes autorizados de JavaScript" añade la URL exacta donde publiques
+      la web (ej. https://tu-usuario.github.io).
+   5. Copia el "ID de cliente" en CONFIG.auth.googleClientId.
+
+   DISCORD
+   1. https://discord.com/developers/applications → "New Application".
+   2. Pestaña "OAuth2" → copia el "Client ID" en CONFIG.auth.discordClientId.
+   3. En "Redirects" añade la URL exacta de tu web (con barra final si aplica)
+      y pon esa misma URL en CONFIG.auth.discordRedirectUri.
+   ========================================================================= */
+function initAuth(){
+  // --- Google ---
+  if(window.google && CONFIG.auth.googleClientId && !CONFIG.auth.googleClientId.startsWith("TU_")){
+    google.accounts.id.initialize({
+      client_id: CONFIG.auth.googleClientId,
+      callback: handleGoogleLogin
+    });
+    google.accounts.id.renderButton($("#googleBtnWrap"), {
+      theme: "filled_black", size: "large", shape: "pill", text: "continue_with", logo_alignment: "left"
+    });
+  } else {
+    // Sin client_id configurado: mostramos un botón de aviso en vez de fallar en silencio
+    $("#googleBtnWrap").innerHTML = `<button type="button" class="discord-btn" id="googleFallbackBtn">🔵 Google</button>`;
+    const gb = $("#googleFallbackBtn");
+    if(gb) gb.addEventListener("click", () => showToast("Configura CONFIG.auth.googleClientId para activar el login con Google"));
+  }
+
+  // --- Discord ---
+  $("#discordLoginBtn").addEventListener("click", () => {
+    if(!CONFIG.auth.discordClientId || CONFIG.auth.discordClientId.startsWith("TU_")){
+      showToast("Configura CONFIG.auth.discordClientId para activar el login con Discord");
+      return;
+    }
+    const params = new URLSearchParams({
+      client_id: CONFIG.auth.discordClientId,
+      redirect_uri: CONFIG.auth.discordRedirectUri,
+      response_type: "token",
+      scope: "identify email"
+    });
+    window.location.href = `https://discord.com/api/oauth2/authorize?${params.toString()}`;
+  });
+
+  // --- Vuelta de Discord: el token llega en el fragmento de la URL (#access_token=...) ---
+  if(window.location.hash.includes("access_token")){
+    const hashParams = new URLSearchParams(window.location.hash.slice(1));
+    const token = hashParams.get("access_token");
+    if(token){
+      fetch("https://discord.com/api/users/@me", { headers: { Authorization: `Bearer ${token}` } })
+        .then(r => r.json())
+        .then(u => {
+          const avatar = u.avatar
+            ? `https://cdn.discordapp.com/avatars/${u.id}/${u.avatar}.png`
+            : `https://cdn.discordapp.com/embed/avatars/${(parseInt(u.discriminator || "0") || 0) % 5}.png`;
+          setLoggedInUser({
+            provider: "discord",
+            name: u.global_name || u.username,
+            email: u.email || "",
+            avatar
+          });
+          showToast(`✅ Sesión iniciada con Discord como ${u.username}`);
+        })
+        .catch(() => showToast("No se pudo completar el login con Discord"))
+        .finally(() => history.replaceState(null, "", window.location.pathname + window.location.search));
+    }
+  }
+
+  $("#logoutBtn").addEventListener("click", logout);
+}
+
+function handleGoogleLogin(response){
+  const payload = decodeJwt(response.credential);
+  setLoggedInUser({
+    provider: "google",
+    name: payload.name || payload.email,
+    email: payload.email || "",
+    avatar: payload.picture || ""
+  });
+  showToast(`✅ Sesión iniciada con Google como ${payload.email}`);
+}
+
+function decodeJwt(token){
+  const base64 = token.split(".")[1].replace(/-/g, "+").replace(/_/g, "/");
+  const json = decodeURIComponent(
+    atob(base64).split("").map(c => "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2)).join("")
+  );
+  return JSON.parse(json);
+}
+
+function setLoggedInUser(user){
+  currentUser = user;
+  $("#authLoggedOut").style.display = "none";
+  $("#authLoggedIn").style.display = "flex";
+  $("#userAvatar").src = user.avatar || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(user.name)}`;
+  $("#userName").textContent = user.name;
+  if($("#contactEmail")) $("#contactEmail").value = user.email || "";
+}
+
+function logout(){
+  currentUser = null;
+  $("#authLoggedOut").style.display = "flex";
+  $("#authLoggedIn").style.display = "none";
+  if(window.google) google.accounts.id.disableAutoSelect();
+  showToast("Sesión cerrada");
+}
+
+/* ---------- Modal de datos de cuenta ---------- */
+function initModal(){
+  const overlay = $("#modalOverlay");
+  [$("#payBtnMain"), $("#payBtnSticky")].forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      if(btn.textContent.includes("presupuesto")) return; // deja pasar el mailto
+      setTimeout(() => {
+        overlay.classList.add("open");
+        const note = $("#modalUserNote");
+        if(currentUser){
+          note.style.display = "block";
+          note.textContent = `🔒 Conectado como ${currentUser.name}${currentUser.email ? " · " + currentUser.email : ""}. Hemos rellenado tu email de contacto.`;
+          $("#contactEmail").value = currentUser.email || $("#contactEmail").value;
+        } else {
+          note.style.display = "none";
+        }
+      }, 300);
+    });
+  });
+  $("#modalClose").addEventListener("click", () => overlay.classList.remove("open"));
+  overlay.addEventListener("click", (e) => { if(e.target === overlay) overlay.classList.remove("open"); });
+
+  $("#accountForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const riotId = $("#riotId").value, email = $("#contactEmail").value, notes = $("#notes").value;
+    const subject = encodeURIComponent(`Nuevo pedido — ${riotId}`);
+    const body = encodeURIComponent(`Riot ID: ${riotId}\nEmail: ${email}\nNotas: ${notes}`);
+    // Sustituye este mailto por tu propio backend/Formspree/EmailJS cuando lo tengas listo
+    window.location.href = `mailto:${CONFIG.brand.email}?subject=${subject}&body=${body}`;
+    overlay.classList.remove("open");
+    showToast("✅ Datos enviados. ¡Nos ponemos en marcha!");
+  });
+}
+
+/* ---------- Toast ---------- */
+function showToast(msg){
+  const t = $("#toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 2600);
+}
+
+/* ---------- Partículas de fondo ---------- */
+function initParticles(){
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const wrap = $("#particles");
+  const count = window.innerWidth < 700 ? 12 : 24;
+  for(let i=0;i<count;i++){
+    const p = document.createElement("div");
+    p.className = "particle";
+    const size = 2 + Math.random()*4;
+    p.style.width = p.style.height = `${size}px`;
+    p.style.left = `${Math.random()*100}%`;
+    p.style.animationDuration = `${10 + Math.random()*14}s`;
+    p.style.animationDelay = `${Math.random()*10}s`;
+    wrap.appendChild(p);
+  }
+}
+
+/* ---------- Init ---------- */
+function init(){
+  $("#year").textContent = new Date().getFullYear();
+  renderGameTabs();
+  renderRankSelects();
+  renderLadder();
+  renderExtras();
+  renderServices();
+  renderWhy();
+  renderTestimonials();
+  renderFAQ();
+  initStats();
+  initNav();
+  initAuth();
+  initModal();
+  initParticles();
+  updateSummary();
+}
+document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>
